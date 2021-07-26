@@ -1,0 +1,171 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+}
+
+.container-foter {
+  display: flex;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  text-decoration: none;
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: var(--white-color);
+}
+
+.address {
+  font-style: inherit;
+  width: 231px;
+}
+
+.address__list {
+  display: inline-block;
+  list-style: none;
+}
+
+.address__item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.address__contact {
+  display: inline-block;
+
+  text-decoration: none;
+  font-style: inherit;
+
+  line-height: 1.7;
+
+  color: var(--white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__mail {
+  display: inline-block;
+
+  text-decoration: none;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__tell {
+  text-decoration: none;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__social {
+  margin-left: 70px;
+}
+
+.social__subject {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  font-size: 14px;
+
+  color: var(--white-color);
+}
+
+.social__list {
+  display: flex;
+}
+.social__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accnt-color);
+  }
+}
+
+.social__icon {
+  width: 44px;
+  height: 44px;
+  fill: var(--white-color);
+}
+
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-form__title {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form-box {
+  display: flex;
+}
+
+.footer-form__mail {
+  color: var(--white-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+}
+.footer-form__mail::placeholder {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 295px 15px 16px;
+}
+.footer-form__button {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+
+  padding: 10px 62px 10px 29px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: 148px 50%;
+  background-image: url(../images/svg/icon-tviter.svg);
+}
