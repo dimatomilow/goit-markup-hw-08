@@ -1,12 +1,12 @@
 .features {
   list-style: none;
-  display: flex;
 }
 
 .features__item {
-  width: 270px;
-  &:nth-child(-n + 3) {
-    margin-right: 30px;
+  width: 450px;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -17,7 +17,7 @@
   margin-bottom: 30px;
 
   height: 120px;
-  width: 270px;
+  width: 450px;
   background-color: #f5f4fa;
 }
 
@@ -41,15 +41,10 @@
 .features__title {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
 
-  color: var(--title-text-color);
+  color: $title-color;
 
   font-weight: 700;
-  font-size: 14px;
   text-transform: uppercase;
-}
-
-.features__text {
-  color: var(--text-color);
-  line-height: 1.7;
 }

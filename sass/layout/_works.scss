@@ -1,5 +1,8 @@
 .works {
   padding-top: 0;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .works__title {
   margin-top: 0;
@@ -9,7 +12,7 @@
   font-weight: 700;
   font-size: 36px;
 
-  color: var(--title-text-color);
+  color: $title-color;
 }
 
 .works-list {
@@ -37,10 +40,10 @@
   display: flex;
   justify-content: center;
 
-  font-family: var(--roboto-font);
+  font-family: $roboto-font;
   font-weight: bold;
   font-size: 14px;
-  color: var(--white-color);
+  color: $white-color;
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
 }

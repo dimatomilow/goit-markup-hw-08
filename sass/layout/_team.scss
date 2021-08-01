@@ -1,27 +1,28 @@
-.team {
-  background-color: var(--button-color);
-}
-
 .team-subject {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   text-align: center;
-  font-size: 36px;
-  line-height: 42px;
-  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  color: $title-color;
 }
 
-.team-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
 .team-list__item {
-  background-color: var(--white-color);
+  background-color: $white-color;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-img {
+  margin: auto;
+  width: 450px;
+  height: 460px;
 }
 .team-info {
   text-align: center;
@@ -32,14 +33,17 @@
 }
 
 .team-info__name {
+  font-weight: 500px;
   font-size: 16px;
   margin-bottom: 10px;
+  line-height: 1.1;
 
-  color: var(--title-text-color);
+  color: $title-color;
 }
 
 .team-info__profesion {
   font-size: 16px;
+  line-height: 1.1;
 
   margin-bottom: 16px;
 }
@@ -61,14 +65,14 @@
   display: block;
   width: 44px;
   height: 44px;
-  background-color: var(--white-color);
+  background-color: $white-color;
   border-radius: 50px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background-color: var(--accnt-color);
+    background-color: $acent-color;
   }
 }
 
@@ -81,6 +85,6 @@
 
   .list-icon__link:hover &,
   .list-icon__link:focus & {
-    fill: var(--white-color);
+    fill: $white-color;
   }
 }
