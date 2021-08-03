@@ -6,22 +6,22 @@
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation__logo {
-  margin-right: 276px;
   text-decoration: none;
-  font-family: $logo-font;
+  font-family: var(--logo-font);
   font-size: 24px;
   font-weight: 700;
   line-height: 1.1;
-  color: $title-color;
+  color: var(--title-color);
   letter-spacing: 0.03em;
 }
 
 .logo__decoration {
-  font-family: $logo-font;
-  color: $acent-color;
+  font-family: var(--logo-font);
+  color: var(--acent-color);
 }
 
 .menu-toggle {
@@ -41,7 +41,7 @@
 
   &:hover,
   &:focus {
-    color: $acent-color;
+    color: var(--acent-color);
   }
 }
 
@@ -53,25 +53,25 @@
 
   z-index: 999;
   padding: 48px 0 48px 40px;
-  background-color: $white-color;
-  transform: translateX(-100%);
+  background-color: var(--white-color);
+  transform: translateX(-150%);
   transition: transform 250ms ease-in-out;
 }
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--white-color);
 }
 .menu-container .menu-toggle:hover {
-  fill: $acent-color;
+  fill: var(--acent-color);
 }
 
 .menu-container.is-open {
   transform: translateX(0);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .menu-toggle {
     display: none;
   }
@@ -93,16 +93,10 @@
   font-weight: 500;
   font-size: 40px;
 
-  color: $title-color;
-
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  // &:hover,
-  // &:focus {
-  //   color: $acent-color;
-  // }
+  color: var(--title-color);
 }
 .link-current {
-  color: $acent-color;
+  color: var(--acent-color);
 }
 
 .contact {
@@ -119,13 +113,7 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
 
-  color: $primarycolor;
-
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  // &:hover,
-  // &:focus {
-  //   color: $acent-color;
-  // }
+  color: var(--primarycolor);
 }
 .contact__tell {
   text-decoration: none;
@@ -133,7 +121,7 @@
   font-size: 34px;
   letter-spacing: 0.02em;
 
-  color: $acent-color;
+  color: var(--acent-color);
 }
 .contact__mail {
   text-decoration: none;
@@ -141,7 +129,7 @@
   font-size: 24px;
   letter-spacing: 0.02em;
 
-  color: $primarycolor;
+  color: var(--primarycolor);
 }
 .menu-social {
   display: flex;
@@ -157,7 +145,7 @@
   font-size: 18px;
   letter-spacing: 0.02em;
 
-  color: $acent-color;
+  color: var(--acent-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -170,11 +158,6 @@
 
 @media screen and (min-width: 768px) {
   .page-header__container {
-    display: flex;
-    align-items: center;
-  }
-
-  .navigation {
     display: flex;
   }
 
@@ -207,13 +190,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
 
-    color: $title-color;
-
-    // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // &:hover,
-    // &:focus {
-    //   color: $acent-color;
-    // }
+    color: var(--title-color);
   }
   .link-current {
     &::after {
@@ -225,7 +202,7 @@
       content: '';
       width: 100%;
       height: 4px;
-      background: $acent-color;
+      background: var(--acent-color);
       border-radius: 2px;
     }
   }
@@ -248,42 +225,24 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: center;
-    color: $primarycolor;
-
-    // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // &:hover,
-    // &:focus {
-    //   color: $acent-color;
-    // }
+    color: var(--primarycolor);
   }
 
   .contact__icon-email {
     display: inline-block;
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     margin-right: 10px;
     fill: #757575;
-
-    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // .contact__link:hover &,
-    // .contact__link:focus & {
-    //   fill: $acent-color;
-    // }
   }
 
   .contact__icon-tell {
     display: inline-block;
     align-items: center;
     width: 10px;
-    height: 16px;
+    height: 14px;
     margin-right: 10px;
     fill: #757575;
-
-    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // .contact__link:hover &,
-    // .contact__link:focus & {
-    //   fill: $acent-color;
-    // }
   }
 }
 
@@ -293,6 +252,12 @@
   .page-header {
     padding: 24px 0;
   }
+
+  .page-header__container {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
   .navigation__logo {
     margin-right: 93px;
     font-weight: 700;
@@ -304,7 +269,51 @@
       bottom: -36px;
     }
   }
-  .navigation__menu {
-    margin-right: 305px;
+
+  .navigation__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--acent-color);
+    }
+  }
+
+  .contact {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .contact__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--acent-color);
+    }
+  }
+
+  .contact__icon-email {
+    width: 16px;
+    height: 12px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .contact__link:hover &,
+    .contact__link:focus & {
+      fill: var(--acent-color);
+    }
+  }
+
+  .contact__icon-tell {
+    width: 10px;
+    height: 16px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .contact__link:hover &,
+    .contact__link:focus & {
+      fill: var(--acent-color);
+    }
   }
 }

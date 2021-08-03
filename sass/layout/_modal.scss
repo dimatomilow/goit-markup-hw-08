@@ -14,8 +14,8 @@
 
   padding: 40px;
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
 
   background-color: var(--white-color);
   text-align: center;
@@ -26,7 +26,7 @@
   font-size: 20px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: var(--title-color);
 
   margin: 0;
   margin-bottom: 12px;
@@ -42,7 +42,6 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 1.1;
-  color: var(--text-color);
 
   letter-spacing: 0.01em;
 
@@ -64,7 +63,7 @@
 
   .modal-form__input:hover + &,
   .modal-form__input:focus + & {
-    fill: var(--accnt-color);
+    fill: var(--acent-color);
   }
 }
 
@@ -79,7 +78,7 @@
 
   &:hover,
   &:focus {
-    border-color: var(--accnt-color);
+    border-color: var(--acent-color);
   }
 }
 
@@ -97,7 +96,7 @@
 
   &:hover,
   &:focus {
-    border-color: var(--accnt-color);
+    border-color: var(--acent-color);
   }
 
   &::placeholder {
@@ -115,7 +114,7 @@
 }
 
 .checkbox:checked + .checkbox__box {
-  background-color: var(--accnt-color);
+  background-color: var(--acent-color);
   background-image: url(../images/svg/Vector.svg);
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -125,29 +124,29 @@
 .checkbox-box {
   width: 15px;
   height: 15px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid var(--title-color);
   border-radius: 2px;
   margin-right: 8px;
   .checkbox:focus + & {
-    border-color: var(--accnt-color);
+    border-color: var(--acent-color);
   }
 }
 
 .modal-form__agree {
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 12px;
+  line-height: 1.1;
 }
 
 .agree__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.8;
-  color: var(--accnt-color);
+  color: var(--acent-color);
 }
 
 .modal-form__button {
   display: inline-block;
   padding: 10px 55px;
-  background-color: var(--accnt-color);
+  background-color: var(--acent-color);
   color: var(--white-color);
   border: none;
   border-radius: 4px;
@@ -163,5 +162,12 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
