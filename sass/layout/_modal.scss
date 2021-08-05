@@ -46,6 +46,11 @@
   letter-spacing: 0.01em;
 
   margin-bottom: 4px;
+
+  .modal-form__input:hover + &,
+  .modal-form__input:focus + & {
+    color: var(--acent-color);
+  }
 }
 .modal-form__box {
   position: relative;
