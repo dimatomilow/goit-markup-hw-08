@@ -63,16 +63,11 @@
 .portfolio__overlay {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 
 .overlay__img {
   width: 100%;
-
-  @media screen and (min-width: 450px) {
-    & {
-      width: 450px;
-    }
-  }
 }
 
 .overlay__text {
@@ -92,7 +87,7 @@
   color: var(--white-color);
   letter-spacing: 0.03em;
 
-  padding: 63px 24px;
+  padding: 77px 24px;
   margin: 0;
 
   overflow: auto;
@@ -142,6 +137,10 @@
   .portfolio__item:nth-child(2n + 1) {
     margin-right: 30px;
   }
+
+  .overlay__text {
+    padding: 49px 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -163,5 +162,9 @@
   }
   .portfolio__list .portfolio__item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+  }
+
+  .overlay__text {
+    padding: 63px 24px;
   }
 }
