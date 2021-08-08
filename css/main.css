@@ -731,6 +731,9 @@ img {
   .team-list .team-list__item {
     margin-bottom: 0;
   }
+  .team-list .team-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
   .team-list__item {
     width: 270px;
   }
