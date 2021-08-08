@@ -98,6 +98,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .team {
+    background-color: #f5f4fa;
+  }
   .team-list {
     flex-wrap: nowrap;
   }
@@ -108,9 +111,6 @@
 
   .team-list__item {
     width: 270px;
-    &:nth-child(2) {
-      margin-right: 30px;
-    }
   }
 
   .team-img {

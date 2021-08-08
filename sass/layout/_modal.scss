@@ -36,6 +36,9 @@
   margin-bottom: 30px;
   text-align: initial;
 }
+.footer__section {
+  margin-bottom: 60px;
+}
 
 .modal-form__label {
   display: inline-block;
@@ -167,6 +170,11 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-adress {
+    margin-bottom: 0;
   }
 }
 
