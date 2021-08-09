@@ -172,7 +172,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 999;
   padding: 48px 40px;
   background-color: var(--white-color);
@@ -246,7 +246,7 @@ img {
   font-weight: 500;
   font-size: 34px;
   letter-spacing: 0.02em;
-  color: var(--primarycolor);
+  color: var(--acent-color);
 }
 
 .contact__mail {
@@ -283,6 +283,9 @@ img {
   .page-header__container {
     display: flex;
   }
+  .navigation {
+    margin-right: 84px;
+  }
   .navigation__logo {
     margin-right: 88px;
   }
@@ -292,7 +295,6 @@ img {
   .navigation__menu {
     display: flex;
     margin-bottom: 0;
-    margin-right: 84px;
   }
   .navigation__item {
     margin-right: 50px;
