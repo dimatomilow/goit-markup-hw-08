@@ -178,6 +178,12 @@
   .container-foter {
     display: flex;
   }
+  .container-foter .footer__section {
+    margin-bottom: 0;
+  }
+  .footer__section {
+    margin-right: 93px;
+  }
   .container-adress {
     text-align: inherit;
     margin-right: 70px;
@@ -185,7 +191,6 @@
   }
 
   .footer__social {
-    margin-right: 93px;
     text-align: inherit;
     margin-bottom: 0;
   }

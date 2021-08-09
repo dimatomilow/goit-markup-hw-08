@@ -172,8 +172,9 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
   z-index: 999;
-  padding: 48px 0 48px 40px;
+  padding: 48px 40px;
   background-color: var(--white-color);
   transform: translateX(-150%);
   transition: transform 250ms ease-in-out;
@@ -411,7 +412,8 @@ img {
 
 .page-hero {
   width: 100%;
-  padding: 168px 0;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   margin: auto;
   background-color: #2f303a;
@@ -450,7 +452,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .page-hero {
-    background-image: url(../images/hero/tablet-hero@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/tablet-hero@1x.jpg);
   }
 }
 
@@ -463,7 +465,7 @@ img {
     background-color: #188ce8;
   }
   .page-hero {
-    background-image: url(../images/hero/desctop-hero@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/desctop-hero@1x.jpg);
   }
 }
 
@@ -482,6 +484,8 @@ img {
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .page-hero {
     background-image: url(../images/hero/desctop-hero@2x.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -809,8 +813,8 @@ img {
   .customers-list__item {
     flex-basis: calc(100% / 3 - 20px);
   }
-  .customers-list .customers-list__item:nth-child(-n + 4) {
-    margin-bottom: 30px;
+  .customers-list .customers-list__item:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 
@@ -996,13 +1000,18 @@ img {
   .container-foter {
     display: flex;
   }
+  .container-foter .footer__section {
+    margin-bottom: 0;
+  }
+  .footer__section {
+    margin-right: 93px;
+  }
   .container-adress {
     text-align: inherit;
     margin-right: 70px;
     margin-bottom: 0%;
   }
   .footer__social {
-    margin-right: 93px;
     text-align: inherit;
     margin-bottom: 0;
   }
@@ -1028,7 +1037,7 @@ img {
 .filter__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 14px;
+  margin-bottom: 30px;
 }
 
 .filter__item:nth-child(-n + 4) {

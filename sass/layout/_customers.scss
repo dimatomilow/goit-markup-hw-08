@@ -53,8 +53,8 @@
   .customers-list__item {
     flex-basis: calc(100% / 3 - 20px);
   }
-  .customers-list .customers-list__item:nth-child(-n + 4) {
-    margin-bottom: 30px;
+  .customers-list .customers-list__item:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 

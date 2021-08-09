@@ -50,9 +50,9 @@
   top: 0;
   left: 0;
   width: 100%;
-
+  height: 100vh;
   z-index: 999;
-  padding: 48px 0 48px 40px;
+  padding: 48px 40px;
   background-color: var(--white-color);
   transform: translateX(-150%);
   transition: transform 250ms ease-in-out;
